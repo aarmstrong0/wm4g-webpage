@@ -1,0 +1,213 @@
+/* WM4G Ham Radio Operator Website */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #1a1a2e;
+  color: #d8d8d8;
+  line-height: 1.75;
+}
+
+/* Header */
+header {
+  background-color: #10192d;
+  border-bottom: 2px solid #c0392b;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3.5rem;
+  letter-spacing: 0.15em;
+  color: #e8e8e8;
+  text-transform: uppercase;
+}
+
+header p.tagline {
+  font-size: 1rem;
+  color: #9aa0b4;
+  margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #10192d;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #2a3a5a;
+}
+
+nav a {
+  color: #9aa0b4;
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #e8e8e8;
+  outline: none;
+}
+
+/* Main layout */
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Sections */
+section {
+  padding: 1.75rem 0 1.5rem;
+  border-bottom: 1px solid #2a3a5a;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  color: #c0392b;
+  margin-bottom: 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.03em;
+}
+
+section p {
+  margin-bottom: 0.75rem;
+  color: #c8ccd8;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists */
+ul.interest-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+
+ul.interest-list li {
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  color: #c8ccd8;
+  position: relative;
+}
+
+ul.interest-list li::before {
+  content: '–';
+  color: #9aa0b4;
+  position: absolute;
+  left: 0;
+}
+
+section p a {
+  color: #9aa0b4;
+  text-decoration: underline;
+}
+
+section p a:hover {
+  color: #e8e8e8;
+}
+
+
+.links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.link-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #10192d;
+  color: #9aa0b4;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: 1px solid #2a3a5a;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.link-card:hover,
+.link-card:focus {
+  color: #e8e8e8;
+  border-color: #9aa0b4;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #10192d;
+  border-top: 1px solid #2a3a5a;
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+/* Responsive — tablet */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    margin: 2rem auto;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    padding: 0.55rem 1rem;
+  }
+}
+
+/* Responsive — mobile */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p.tagline {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  main {
+    margin: 1.25rem auto;
+    gap: 1.25rem;
+  }
+
+  .links-grid {
+    flex-direction: column;
+  }
+}

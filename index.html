@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WM4G – Amateur Radio Operator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>WM4G</h1>
+    <p class="tagline">Amateur Radio Operator &mdash; Florida</p>
+  </header>
+
+  <nav>
+    <a href="#operating-interests">Operating Interests</a>
+    <a href="#portable-setup">Portable Radio Setup</a>
+    <a href="#volunteer-examiner">Volunteer Examiner</a>
+    <a href="#club">Club</a>
+    <a href="#links">Links</a>
+  </nav>
+
+  <main>
+
+    <!-- Operating Interests -->
+    <section id="operating-interests">
+      <h2>Operating Interests</h2>
+      <ul class="interest-list">
+        <li>POTA hunting &mdash; with occasional activations when I can get out to the parks</li>
+        <li>HF digital modes (FT8 for now)</li>
+        <li>Club activities like Field Day, special event stations, and public service events</li>
+        <li>VHF/UHF Local Nets</li>
+      </ul>
+      <p>
+        Looking forward to doing more park activations in the future. There's something special
+        about operating portable in nature.
+      </p>
+    </section>
+
+    <!-- Portable Radio Setup -->
+    <section id="portable-setup">
+      <h2>Portable Radio Setup</h2>
+      <ul class="setup-list">
+        <li>Yaesu FT-891 transceiver</li>
+        <li>LDG auto tuner</li>
+        <li>POTA Explorer 20' carbon fiber mast</li>
+        <li>FlatlandersMirrors 67ft 40m–10m EFHW antenna</li>
+      </ul>
+      <p>Configured for portable activations and POTA hunting.</p>
+    </section>
+
+    <!-- Volunteer Examiner -->
+    <section id="volunteer-examiner">
+      <h2>Volunteer Examiner</h2>
+      <p>
+        I'm a VE with both <strong>ARRL</strong> and <strong>Laurel VEC</strong>. Helping new
+        operators get licensed and upgrade is one of the most rewarding parts of the hobby.
+      </p>
+      <p>
+        If you're in the area and looking to test, reach out.
+      </p>
+    </section>
+
+    <!-- Club Membership -->
+    <section id="club">
+      <h2>Club Membership</h2>
+      <p>
+        Member of the <a href="https://eparsonline.org/2024/" target="_blank" rel="noopener noreferrer">East Pasco Amateur Radio Society (K4EX)</a>.
+      </p>
+      <p>
+        Proud member and occasional Net Control Operator for club nets. Always great to connect
+        with local hams and help coordinate our on-air activities.
+      </p>
+    </section>
+
+    <!-- Links -->
+    <section id="links">
+      <h2>Links</h2>
+      <div class="links-grid">
+        <a class="link-card" href="https://www.qrz.com/db/WM4G" target="_blank" rel="noopener noreferrer">QRZ Profile</a>
+        <a class="link-card" href="https://pota.app/#/profile/WM4G" target="_blank" rel="noopener noreferrer">POTA Stats</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>73 de WM4G &mdash; <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
