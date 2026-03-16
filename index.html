@@ -22,6 +22,13 @@
   </nav>
 
   <main>
+  
+    <section id="about">
+      <h2>About Me</h2>
+    <p>
+      Hello! I'm Andrew, WM4G, an Extra class amateur radio operator based on the West Coast of Florida near Tampa. I've been licensed since November 2024. I have been enjoying portable operations, learning at my local club K4EX, and getting more involved in the ham radio world. For now, this is a fairly basic page to share a bit about my ham radio activities and interests. I hope to expand it over time as I get more involved and learn new things in this great hobby!
+    </p>
+    </section>
 
     <!-- Operating Interests -->
     <section id="operating-interests">
@@ -29,7 +36,7 @@
       <ul class="interest-list">
         <li>POTA hunting &mdash; with occasional activations when I can get out to the parks</li>
         <li>HF digital modes (FT8 for now)</li>
-        <li>Club activities like Field Day, special event stations, and public service events</li>
+        <li>Club activities like Field Day, Florida Parks on The Air, Winter Field Day, special event stations, and public service events</li>
         <li>VHF/UHF Local Nets</li>
       </ul>
       <p>
@@ -45,20 +52,19 @@
         <li>Yaesu FT-891 transceiver</li>
         <li>LDG auto tuner</li>
         <li>POTA Explorer 20' carbon fiber mast</li>
-        <li>FlatlandersMirrors 67ft 40m–10m EFHW antenna</li>
+        <li>FlatlandersMirrors 67ft 40m, 20m, 15m, 10m EFHW antenna</li>
       </ul>
-      <p>Configured for portable activations and POTA hunting.</p>
+      <p>Used for portable activations and POTA hunting at my QTH.</p>
     </section>
 
     <!-- Volunteer Examiner -->
     <section id="volunteer-examiner">
       <h2>Volunteer Examiner</h2>
       <p>
-        I'm a VE with both <strong>ARRL</strong> and <strong>Laurel VEC</strong>. Helping new
-        operators get licensed and upgrade is one of the most rewarding parts of the hobby.
+        I'm a VE with both <strong>ARRL</strong> and <strong>Laurel VEC</strong> as part of EPARS/K4EX VE Team.
       </p>
       <p>
-        If you're in the area and looking to test, reach out.
+        If you're in the area and looking to test, reach out to the <a href="https://eparsonline.org/2024/club-events/ve-testing/" target="_blank" rel="noopener noreferrer">EPARS/K4EX VE Team</a> or look for a upcoming session on our <a href="https://hamstudy.org/sessions/EPARS/all" target="_blank" rel="noopener noreferrer">Hamstudy.org page</a>.
       </p>
     </section>
 
@@ -76,6 +82,9 @@
 
     <!-- Links -->
     <section id="links">
+      <h2>Get in Touch</h2>
+      <p>Email: <a href="#" class="email-link" onclick="showEmail(event)">reveal address</a></p>
+            
       <h2>Links</h2>
       <div class="links-grid">
         <a class="link-card" href="https://www.qrz.com/db/WM4G" target="_blank" rel="noopener noreferrer">QRZ Profile</a>
@@ -91,6 +100,18 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    function showEmail(event) {
+        event.preventDefault();
+        const user = 'me';
+        const domain = 'wm4g.com';
+        const email = user + '@' + domain;
+        const link = event.target;
+        link.href = 'mailto:' + email;
+        link.textContent = email;
+        link.onclick = null;
+    }
+
   </script>
 
 </body>
