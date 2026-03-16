@@ -1,0 +1,185 @@
+/* WM4G Ham Radio Operator Website */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  border-bottom: 3px solid #e94560;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  color: #e94560;
+  text-transform: uppercase;
+}
+
+header p.tagline {
+  font-size: 1.1rem;
+  color: #a8b2d8;
+  margin-top: 0.4rem;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation */
+nav {
+  background-color: #0f3460;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ccd6f6;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #e94560;
+  color: #fff;
+  outline: none;
+}
+
+/* Main layout */
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Sections */
+section {
+  background-color: #16213e;
+  border-radius: 8px;
+  padding: 2rem 2rem 1.75rem;
+  border-left: 4px solid #e94560;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #e94560;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section h2 .icon {
+  font-size: 1.3rem;
+}
+
+section p {
+  margin-bottom: 0.75rem;
+  color: #ccd6f6;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists */
+ul.interest-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+
+ul.interest-list li {
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  color: #ccd6f6;
+  position: relative;
+}
+
+ul.interest-list li::before {
+  content: '▸';
+  color: #e94560;
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+/* Links section */
+.links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.link-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0f3460;
+  color: #ccd6f6;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid #1e4a8a;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.link-card:hover,
+.link-card:focus {
+  background-color: #e94560;
+  border-color: #e94560;
+  color: #fff;
+  outline: none;
+}
+
+.link-card .link-icon {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0f3460;
+  border-top: 3px solid #e94560;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  color: #8892b0;
+  font-size: 0.88rem;
+  margin-top: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  section {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .links-grid {
+    flex-direction: column;
+  }
+}
